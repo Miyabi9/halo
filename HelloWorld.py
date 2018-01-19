@@ -12,13 +12,13 @@ from googletrans import Translator
     
 botStart = time.time() 
 
-#cl = HelloWorld.LINE()
-#cl.login(qr=True)
-#cl.loginResult()
-
 cl = HelloWorld.LINE()
-cl.login(token="AuthToken")
+cl.login(qr=True)
 cl.loginResult()
+
+#cl = HelloWorld.LINE()
+#cl.login(token="AuthToken")
+#cl.loginResult()
 
 print "=============[Login Success]============="
 reload(sys)
